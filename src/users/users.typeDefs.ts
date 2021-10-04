@@ -9,6 +9,11 @@ const usersTypeDefs = gql`
     location: String!
     avatarURL: String!
     githubUsername: String!
+    following: [User]
+    followers: [User]
+    totalFollowing: Int!
+    totalFollowers: Int!
+    isMe: Boolean!
     createdAt: String!
     updatedAt: String!
   }
